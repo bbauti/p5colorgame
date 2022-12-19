@@ -87,7 +87,7 @@ function win() {
         });
         header.style.backgroundColor = colorGanador
         statusText.innerHTML = "Felicidades!"
-        puntos = puntos + 10
+        // puntos = puntos + 10
         // localStorage.setItem('puntos', puntos);  || En un futuro agregar sistema de puntos
         wintimes++
     }
@@ -98,6 +98,7 @@ function retry(item) {
     setTimeout(function () {
         item.classList.toggle("shake")
     },500);
+    item.style.backgroundColor = "rgb(22, 22, 22)"
 }
 
 function clickListener() {
