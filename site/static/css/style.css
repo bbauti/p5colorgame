@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'roboto'; /*a name to be used later*/
-  src: url('/roboto.ttf'); /*URL to font*/
+  src: url('../../assets/roboto.ttf'); /*URL to font*/
 }
 
 body {
@@ -182,4 +182,31 @@ a {
   50% { transform: translateX(-5px) }
   75% { transform: translateX(5px) }
   100% { transform: translateX(0) }
+}
+
+@media screen and (max-width: 480px) {
+  .theGreat {
+    font-size: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .footer {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .line {
+    height: 8vh;
+  }
+
+  #button {
+    padding: 0.5rem 1rem;
+  }
+
+  .status {
+    font-size: 1.5rem;
+  }
 }
